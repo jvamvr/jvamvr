@@ -1,0 +1,13 @@
+#This is the solution in python for the 10 base Question 
+
+n=10
+m=n
+mask=0
+#edge case 
+if n==0:
+    print('1')
+while(m!=0):
+    mask=mask <<1 | 1
+    m=m >>1
+ans=(~n)&mask
+print(ans)
